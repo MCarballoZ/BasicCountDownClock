@@ -15,33 +15,13 @@ function updatetime() { //Funcion para actualizar el reloj
 	hh = horas - dias  * 24;
 	mm = minutos  - horas * 60;
 	ss = segundos  - minutos  * 60;
+	
 
-	// Crear divisiones
-
-	var divdias = document.createElement("div");	
-	var divhoras = document.createElement("div"); 	
-	var divminutos = document.createElement("div"); 
-	var divsegundos = document.createElement("div");
-
-	divdias.className = "dias";		
-	divhoras.className = "horas";	
-	divminutos.className = "minutos";	
-	divsegundos.className = "segundos";
-
-	divdias.innerHTML = '<span class="num">' + dd + '<br/> dias </span>';
-	divhoras.innerHTML = '<span class="num">' + hh + '<br/>  horas </span>';
-	divminutos.innerHTML = '<span class="num">' + mm + '<br/>  minutos </span>';
-	divsegundos.innerHTML = '<span class="num">' + ss + '<br/>  segundos </span>';
-
-	while (document.getElementById("CLOCKCLOCK").hasChildNodes()) 
-	{
-    	document.getElementById("CLOCKCLOCK").removeChild(document.getElementById("CLOCKCLOCK").lastChild);
-	}
-
-	document.getElementById("CLOCKCLOCK").appendChild(divdias);
-	document.getElementById("CLOCKCLOCK").appendChild(divhoras);
-	document.getElementById("CLOCKCLOCK").appendChild(divminutos);
-	document.getElementById("CLOCKCLOCK").appendChild(divsegundos);
+	document.getElementById("dias").innerHTML = dd + '<br/> dias';
+	document.getElementById("horas").innerHTML = hh + '<br/>  horas';
+	document.getElementById("minutos").innerHTML = mm + '<br/>  minutos';
+	document.getElementById("segundos").innerHTML = ss + '<br/>  segundos';
+	
 }
 
 setInterval('updatetime()', 1000 );

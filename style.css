@@ -3,7 +3,7 @@ html, body{
 	width: 100%;
 }
 
-#CLOCKCLOCK{
+#CLOCKCLOCK {
 	background: #333333;
 	width: 100%;
 	height: 50%;
@@ -11,18 +11,16 @@ html, body{
 	color: #ffffff;
 }
 
-.num{
-	height: 100%;
-	width: 100%;
-	display:inline-block;
-	vertical-align:middle;
+.num {
+	position: relative;
+	top: 25%;
 }
 
-.dias, .horas, .minutos, .segundos{
+div.countdownclock div{
 	float: left;
 	width: 25%;
 	height: 100%;
 	font-family: helvetica;
 	font-size: 4em;
-	text-align: center;	
+	text-align: center;
 }
