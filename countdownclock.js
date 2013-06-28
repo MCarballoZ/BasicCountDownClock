@@ -1,7 +1,7 @@
 function updatetime() { //Funcion para actualizar el reloj
 	
 	now  = new Date(); //Fecha de hoy
-	then = new Date("October 09, 2014 11:30:00"); // fecha en la cual sera el evento
+	then = new Date("October 09, 2013 11:30:00"); // fecha en la cual sera el evento
 	diff = then - now; // tiempo faltante del evento
 		
 	dias  = Math.floor( diff / (1000*60*60*24) ); // Calculo de los dias faltantes
@@ -23,15 +23,15 @@ function updatetime() { //Funcion para actualizar el reloj
 	var divminutos = document.createElement("div"); 
 	var divsegundos = document.createElement("div");
 
-	divdias.class = "dias";		
-	divhoras.class = "horas";	
-	divminutos.class = "minutos";	
-	divsegundos.class = "segundos";
+	divdias.className = "dias";		
+	divhoras.className = "horas";	
+	divminutos.className = "minutos";	
+	divsegundos.className = "segundos";
 
-	divdias.innerHTML = dd + ' dias ';
-	divhoras.innerHTML = hh + ' horas ';
-	divminutos.innerHTML = mm + ' minutos ';
-	divsegundos.innerHTML = ss + ' segundos ';
+	divdias.innerHTML = '<span class="num">' + dd + '<br/> dias </span>';
+	divhoras.innerHTML = '<span class="num">' + hh + '<br/>  horas </span>';
+	divminutos.innerHTML = '<span class="num">' + mm + '<br/>  minutos </span>';
+	divsegundos.innerHTML = '<span class="num">' + ss + '<br/>  segundos </span>';
 
 	while (document.getElementById("CLOCKCLOCK").hasChildNodes()) 
 	{

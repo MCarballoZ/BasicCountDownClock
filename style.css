@@ -1,0 +1,28 @@
+html, body{
+	height: 100%;
+	width: 100%;
+}
+
+#CLOCKCLOCK{
+	background: #333333;
+	width: 100%;
+	height: 50%;
+	margin-top: auto;
+	color: #ffffff;
+}
+
+.num{
+	height: 100%;
+	width: 100%;
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.dias, .horas, .minutos, .segundos{
+	float: left;
+	width: 25%;
+	height: 100%;
+	font-family: helvetica;
+	font-size: 4em;
+	text-align: center;	
+}
