@@ -16,12 +16,12 @@ function updatetime() { //Funcion para actualizar el reloj
 	mm = minutos  - horas * 60;
 	ss = segundos  - minutos  * 60;
 	
-
-	document.getElementById("dias").innerHTML = dd + '<br/> dias';
+	//Cambios para actualizar la informacion dentro de cada div
+	document.getElementById("dias").innerHTML = dd + '<br/> días';
 	document.getElementById("horas").innerHTML = hh + '<br/>  horas';
 	document.getElementById("minutos").innerHTML = mm + '<br/>  minutos';
 	document.getElementById("segundos").innerHTML = ss + '<br/>  segundos';
 	
 }
 
-setInterval('updatetime()', 1000 );
+setInterval('updatetime()', 1000 ); // catualiza cada 1 segundo
